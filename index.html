@@ -3,23 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Andrew Choi Personal Website</title>
+		<title>Andrew Choi</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://kit.fontawesome.com/5da792c57a.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 		<header>
 			<div class="logo">
-				<img>
+				<img src="img/logo.gif">
 			</div>
 			<button class="nav-toggle" aria-label="toggle navigation">
 				<span class="hamburger"></span>
 			</button>
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">My Projects</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Other</a></li>
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="#other" class="nav__link">Other</a></li>
 				</ul>"
 			</nav>
 		</header>
@@ -28,12 +33,80 @@
 		<section class="intro" id="home">
 			<!-- double hypen means modifier class -->
 			<h1 class="section__title section__title--intro">
-				I am <strong>Andrew Choi</strong>
+				<strong>Andrew Choi</strong>
 			</h1>
 			<p class="section__subtitle section__subtitle--intro">aspiring dev</p>
-			<img src="img/placeholder-portrait.jpg" alt="andrew choi headshot">
-			
-
+			<img src="img/placeholder-portrait.jpg" alt="andrew choi headshot" class="intro__img">
 		</section>
+
+		<!-- My Projects -->
+		<section class="my-projects" id="projects">
+			<h2 class="section__title section__title--projects">My Projects</h2>
+			<p class="section__subtitle section__subtitle--projects">coming soon...</p>
+			<div class="projects">
+				<div class="project">
+					<h3></h3>
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Me -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">A little about me...</h2>
+			<p class="section___subtitle section__subtitle--about">coming soon...</p>
+
+			<div class="about-me__body">
+				<p></p>
+				<p></p>
+			</div>
+		</section>
+
+		<!-- Other -->
+		<section class="others" id="other">
+			<h2 class="section__title">Other</h2> 
+			<p class="section__subtitle section__subtitle--other">
+				coming soon...
+			</p>
+
+			<div class="gallery">
+				<a href="#" class="gallery__item">
+					<img src="" alt="" class="gallery__img"> 
+				</a>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<a href="mailto:andrewchoi4998@gmail.com" class="footer__link">andrewchoi4998@gmail.com</a>
+			<ul class="social-list">
+				<!-- github -->
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/achoi98">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+				<!-- linkedin -->
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/andrewchoi44/">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+				<!-- resume download -->
+				<li class="social-list__item">
+					<a class="social-list__link" href="img/resume.pdf" download>
+						<i class="fa-solid fa-user-graduate"></i>
+					</a>
+				</li>
+				<!-- -->
+				<li class="social-list__item">
+					<a class="social-list__link" href="mailto:andrewchoi4998@gmail.com">
+						<i class="fa-solid fa-at"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
 	</body>
 </html>
